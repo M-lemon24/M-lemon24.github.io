@@ -5,27 +5,38 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 
+
 jobs:
+
   build:
+
     name: Build
+
     runs-on: ubuntu-latest
 
+
     steps:
+
+      # 拉取代码
       - name: Checkout
         uses: actions/checkout@v4
 
 
-      # 安装 node-gyp 编译环境
+
+      # 安装编译环境
+      # 用于解决 node-gyp / re2 编译失败
       - name: Install build tools
         run: |
           sudo apt-get update
@@ -37,23 +48,25 @@ jobs:
             g++
 
           python3 --version
-          gcc --version
           g++ --version
 
 
-      # 安装 pnpm
+
+      # 根据 package.json 中
+      # "packageManager": "pnpm@10.28.2"
+      # 自动安装对应版本
       - name: Install pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
 
-      # Node环境
+
+      # Node 环境
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           cache: pnpm
+
 
 
       # GitHub Pages配置
@@ -62,41 +75,52 @@ jobs:
         uses: actions/configure-pages@v5
 
 
-      # 关键修改
-      # 跳过re2编译，优先使用预编译包
+
+      # 安装依赖
       - name: Install dependencies
         run: |
           pnpm install --frozen-lockfile
         env:
-          npm_config_build_from_source: false
           npm_config_python: /usr/bin/python3
+          npm_config_build_from_source: false
 
 
-      # 构建Astro
+
+      # 构建 Astro
       - name: Build Astro
-        run: pnpm run build
+        run: |
+          pnpm run build
 
 
-      # 上传
+
+      # 上传dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist/
 
 
+
+
   deploy:
+
 
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
+
     needs: build
+
 
     runs-on: ubuntu-latest
 
+
     name: Deploy
 
+
     steps:
+
 
       - name: Deploy to GitHub Pages
         id: deployment
