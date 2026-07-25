@@ -13,19 +13,19 @@
 site:
   title: lemonの博客 # 网站名称
   alternate: lemon # 网站英文名称 用于页脚、Logo、@ handle 等
-  subtitle: WA 的一声就哭了 # 网站副标题
+  subtitle: ミク、歌います！ # 网站副标题
   name: lemon # 作者名称 - 请修改为你的名字
-  description: 一个基于 Astro 的现代化博客主题 # 网站描述
+  description: 一颗脆脆的web菜 # 网站描述
   avatar: https://pic.imgdd.cc/i/033v2xddVr3Xx4ycMEDiFv.jpg # 网站头像
   showLogo: true # 是否显示 Logo
   author: lemon # 作者名称 - 请修改为你的名字
-  url: https://koharu.cosine.ren # 站点 URL 用于 RSS 和 SEO
+  url: https://m-lemon24.github.io # 站点 URL 用于 RSS 和 SEO
   defaultOgImage: https://pic.imgdd.cc/i/033v2xddVr3Xx4ycMEDiFv.jpg # 默认 Open Graph 图片
   startYear: 2024 # 建站年份
   timezone: Asia/Shanghai # 时区配置 (IANA 格式)，用于日期显示和处理
   keywords: # SEO 关键词 (全局)
     - 博客
-    - Astro
+    - web
     - 技术
     - 前端
     # 请根据你的网站内容添加关键词
@@ -218,17 +218,17 @@ friends:
     applyTitle: 申请友链 # 申请区块标题
     applyDesc: 请在本页留言，格式如下 # 申请说明
     exampleYaml: | # 申请格式示例，会显示在页面上
-      - site: 你的博客名称 # 站点名称
+      - site: lemonの博客 # 站点名称
         url: https://m-lemon24.github.io/ # 站点网址
-        owner: 你的昵称 # 昵称
-        desc: 站点简介 # 站点简介
+        owner: lemon # 昵称
+        desc: 一颗脆脆的web菜 # 站点简介
         image: https://pic.imgdd.cc/i/033v2xddVr3Xx4ycMEDiFv.jpg # 头像链接
         color: "#ffc0cb" # 主题色（可选）
   data: # 友链列表
     - site: lemonの博客
       url: https://m-lemon24.github.io/
-      owner: cos
-      desc: FE / ACG / 手工 / 深色模式强迫症 / INFP / 兴趣广泛养两只猫的老宅女 / remote
+      owner: lemon
+      desc: web / 小说 / 手工 / 深色模式强迫症 / ENFJ / 兴趣广泛养两只猫的老宅女 / remote
       image: https://pic.imgdd.cc/i/033v2xddVr3Xx4ycMEDiFv.jpg
       color: '#ed788b'
     - site: 示例博客 A
@@ -631,8 +631,8 @@ christmas:
 #   label: 导航显示名称（可选，默认：追番）
 #   icon: 导航图标，Iconify 格式（可选，默认：ri:bilibili-fill）
 # -----------------------------------------------------------------------------
-bangumi:
-  userId: cosine
+# bangumi:
+  # userId: cosine
   # label: 追番
   # icon: ri:bilibili-fill
 
