@@ -34,7 +34,7 @@ const locale = getLocaleFromUrl(Astro.url.pathname);
       title={alternate || title}
       aria-label={alternate || title}
     >
-      {showLogo ? <img src={logoSrc} className="h-8 w-auto" alt="logo" /> : <p class="logo-text">{alternate || title}</p>}
+      {showLogo ? <img src={logoSrc} className="h-4 w-auto" alt="logo" /> : <p class="logo-text">{alternate || title}</p>}
     </a>
     <!-- Mobile: MobilePostHeader (shows heading on post pages, logo otherwise) -->
     <div class="tablet:flex tablet:grow hidden items-center justify-center">
