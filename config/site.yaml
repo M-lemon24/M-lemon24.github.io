@@ -11,16 +11,16 @@
 # Site Basic Information
 # =============================================================================
 site:
-  title: 余弦の博客 # 网站名称
-  alternate: cosine # 网站英文名称 用于页脚、Logo、@ handle 等
+  title: lemonの博客 # 网站名称
+  alternate: lemon # 网站英文名称 用于页脚、Logo、@ handle 等
   subtitle: WA 的一声就哭了 # 网站副标题
-  name: cos # 作者名称 - 请修改为你的名字
+  name: lemon # 作者名称 - 请修改为你的名字
   description: 一个基于 Astro 的现代化博客主题 # 网站描述
-  avatar: /img/avatar.webp # 网站头像
+  avatar: https://pic.imgdd.cc/i/033v2xddVr3Xx4ycMEDiFv.jpg # 网站头像
   showLogo: true # 是否显示 Logo
-  author: Author # 作者名称 - 请修改为你的名字
+  author: lemon # 作者名称 - 请修改为你的名字
   url: https://koharu.cosine.ren # 站点 URL 用于 RSS 和 SEO
-  defaultOgImage: /img/avatar.webp # 默认 Open Graph 图片
+  defaultOgImage: https://pic.imgdd.cc/i/033v2xddVr3Xx4ycMEDiFv.jpg # 默认 Open Graph 图片
   startYear: 2024 # 建站年份
   timezone: Asia/Shanghai # 时区配置 (IANA 格式)，用于日期显示和处理
   keywords: # SEO 关键词 (全局)
@@ -89,7 +89,7 @@ categoryMap:
 featuredCategories:
   - link: life # 对应 categoryMap 中 随笔: life
     label: 随笔
-    image: /img/cover/2.webp
+    image: https://pic.imgdd.cc/i/033vVbt1vPdujhOwWcFwl8.jpg
     description: 生活记录、随想随笔
   - link: note # 对应 categoryMap 中 笔记: note
     label: 笔记
@@ -162,11 +162,11 @@ featuredSeries:
 # -----------------------------------------------------------------------------
 social:
   github:
-    url: https://github.com/your-username # 替换为你的 GitHub 链接
+    url: https://github.com/M-lemon24 # 替换为你的 GitHub 链接
     icon: ri:github-fill # Remix Icon 的 GitHub 图标
     color: '#191717' # (可选) 图标颜色
   email:
-    url: mailto:your@email.com # 替换为你的邮箱，需加 mailto: 前缀
+    url: mailto:3615612914@qq.com # 替换为你的邮箱，需加 mailto: 前缀
     icon: ri:mail-line
     color: '#55acd5'
   rss:
@@ -219,17 +219,17 @@ friends:
     applyDesc: 请在本页留言，格式如下 # 申请说明
     exampleYaml: | # 申请格式示例，会显示在页面上
       - site: 你的博客名称 # 站点名称
-        url: https://your-blog.com/ # 站点网址
+        url: https://m-lemon24.github.io/ # 站点网址
         owner: 你的昵称 # 昵称
         desc: 站点简介 # 站点简介
-        image: https://your-blog.com/avatar.jpg # 头像链接
+        image: https://pic.imgdd.cc/i/033v2xddVr3Xx4ycMEDiFv.jpg # 头像链接
         color: "#ffc0cb" # 主题色（可选）
   data: # 友链列表
-    - site: 余弦の博客
-      url: https://blog.cosine.ren
+    - site: lemonの博客
+      url: https://m-lemon24.github.io/
       owner: cos
       desc: FE / ACG / 手工 / 深色模式强迫症 / INFP / 兴趣广泛养两只猫的老宅女 / remote
-      image: https://blog.cosine.ren/img/avatar.webp
+      image: https://pic.imgdd.cc/i/033v2xddVr3Xx4ycMEDiFv.jpg
       color: '#ed788b'
     - site: 示例博客 A
       url: https://example-a.com
