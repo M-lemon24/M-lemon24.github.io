@@ -25,7 +25,6 @@ const locale = getLocaleFromUrl(Astro.url.pathname);
   transition:name="site-header"
 >
   <div class={`mx-auto flex items-center justify-between tablet:w-full px-6 tablet:pl-10 tablet:pr-3 ${MAX_WIDTH.content}`}>
-    <!-- Desktop: Always show logo -->
     <a
       transition:persist="page-header-avatar"
       class="tablet:hidden -my-4 mr-4 flex cursor-pointer items-center justify-center gap-1 whitespace-nowrap"
@@ -34,9 +33,15 @@ const locale = getLocaleFromUrl(Astro.url.pathname);
       title={alternate || title}
       aria-label={alternate || title}
     >
-      {showLogo ? <img src="/img/logo.png" className="h-6 w-auto" alt="logo" /> : <p class="logo-text">{alternate || title}</p>}
+      {
+        showLogo ? (
+          /* 将原来的 h-6 改为了 h-4.5 (约 18px)，与标准字体高度保持高度一致 */
+          <img src="/img/logo.png" class="h-4.5 w-auto object-contain my-auto" alt="logo" />
+        ) : (
+          <p class="logo-text text-sm font-medium leading-none">{alternate || title}</p>
+        )
+      }
     </a>
-    <!-- Mobile: MobilePostHeader (shows heading on post pages, logo otherwise) -->
     <div class="tablet:flex tablet:grow hidden items-center justify-center">
       <MobilePostHeader
         client:only="react"
@@ -53,10 +58,8 @@ const locale = getLocaleFromUrl(Astro.url.pathname);
   {christmasConfig.enabled && <ChristmasOrnamentToggle client:only="react" />}
 </div>
 
-<!-- 移动端菜单按钮 -->
 <MenuIcon
   client:only="react"
   className="tablet:flex fixed top-0 left-3 z-52 hidden h-14 transition-transform"
   id="mobile-menu-container"
 />
-
