@@ -36,7 +36,7 @@ const locale = getLocaleFromUrl(Astro.url.pathname);
       {
         showLogo ? (
           /* 将原来的 h-6 改为了 h-4.5 (约 18px)，与标准字体高度保持高度一致 */
-          <img src="/img/logo.png" class="h-6 w-auto object-contain my-auto" alt="logo" />
+          <img src="/img/logo.png" class="h-8 w-auto object-contain my-auto" alt="logo" />
         ) : (
           <p class="logo-text text-sm font-medium leading-none">{alternate || title}</p>
         )
