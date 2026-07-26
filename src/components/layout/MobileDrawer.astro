@@ -28,7 +28,7 @@ const locale = getLocaleFromUrl(Astro.url.pathname);
   <div class="flex h-full w-full flex-col overflow-auto">
     <div class="flex items-center">
       <button id="close-drawer" aria-label={t(locale, 'drawer.close')} class="invisible">
-        <Icon name="ri:close-line" class="h-4 w-6" />
+        <Icon name="ri:close-line" class="h-5 w-6" />
       </button>
       {localeEntries.length > 1 && (
         <details class="language-switcher group relative ml-auto mr-4">
