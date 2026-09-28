@@ -1,6 +1,6 @@
 ---
 title: "php特性"
-published: 2026-09-28
+date: 2026-09-28
 description: "总结php特性"
 tags: ["CTF", "Web", "PHP"]
 category: "note"
