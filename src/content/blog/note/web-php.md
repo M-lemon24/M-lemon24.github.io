@@ -5,7 +5,7 @@ description: "总结php特性"
 tags: ["CTF", "Web", "PHP"]
 category: "note"
 draft: false
-link：“web-php”
+link："web-php"
 ---
 
 
