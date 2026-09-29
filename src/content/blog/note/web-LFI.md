@@ -2,7 +2,7 @@
 title: 文件包含漏洞
 link: web-LFI
 catalog: true
-date: date: "2026-09-29 16:00:00"
+date: "2026-09-29 16:00:00"
 description: 文件包含漏洞的理解
 tags:
   - web
