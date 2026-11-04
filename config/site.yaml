@@ -64,11 +64,11 @@ i18n:
 # =============================================================================
 categoryMap:
   # Primary categories
-  随笔: life
-  笔记: note
-  工具: tools
-  运维：Operations
-  周刊: weekly
+  "随笔": life
+  "笔记": note
+  "工具": tools
+  "运维": operations
+  "周刊": weekly
   # Secondary categories (for nested paths)
   前端: front-end
   # Add more as needed:
