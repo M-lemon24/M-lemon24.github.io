@@ -2,14 +2,14 @@
 title: DNS的排查标准顺序
 link: DNS排查
 catalog: true
-date: 2026-11-13 00:00:00
+date: 2026-11-10 16:00:00 -0800
 description: DNS网络故障问题的排查
 tags:
   - 运维
   - linux
 categories:
   - 笔记
-draft: true
+draft: false
 ---
 ## 一.背景
 在一台阿里云香港域ECS（Ubunntu）上部署一个dsh，服务器已将加入tailscale组网，ssh以及ping都正常
