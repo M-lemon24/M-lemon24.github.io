@@ -2,7 +2,7 @@
 title: DNS的排查标准顺序
 link: DNS排查
 catalog: true
-date: 2026-11-10 16:00:00 -0800
+date: 2026-11-10 16:00:00
 description: DNS网络故障问题的排查
 tags:
   - 运维
